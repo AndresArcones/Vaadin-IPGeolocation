@@ -35,7 +35,7 @@ public class UnitTests {
         try {
             form.devolverGeo(null);
         }catch(Exception e){
-            assertTrue(true);git
+            assertTrue(true);
         }
 
 

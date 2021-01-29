@@ -46,10 +46,6 @@ public class Formulario extends VerticalLayout{
 
     public Ip devolverGeo(String ipdoted){
 
-        if(Long.parseLong(ipdoted) > Long.parseLong("4294967295")){
-            resultado.setText("Ip demasiado grande");
-        }
-
         Long ipLong = FuncionesAnexoIP.Dot2LongIP(ipdoted);
 
         Ip ip = new Ip();
