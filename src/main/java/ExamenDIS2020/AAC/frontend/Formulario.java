@@ -46,7 +46,9 @@ public class Formulario extends VerticalLayout{
 
     public Ip devolverGeo(String ipdoted){
 
+
         Long ipLong = FuncionesAnexoIP.Dot2LongIP(ipdoted);
+
 
         Ip ip = new Ip();
         ArrayList<Ip> ips = CrearJson.leerFicheroJson();

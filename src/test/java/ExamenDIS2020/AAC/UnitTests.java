@@ -10,8 +10,8 @@ public class UnitTests {
 
 
     //la funcion dada no funciona ya que los datos del fichero from y to son demasiado largos para poder ejecutarlos asi que no puedo controlar que
-    //esta fuera de rango... una pena en la funcion form.devolverGeo(String ipdoted) que he creado. No me deja compilarlo, no puedo tratas numero de 10 cifras
-    // en java sin una clase especifica de mates
+    //esta fuera de rango... una pena en la funcion form.devolverGeo(String ipdoted) que he creado. No me deja compilarlo, no puedo tratar numero de 10 cifras
+    // en java sin una clase especifica de math
 
     /*public static String longToIp(long ip) {
 
