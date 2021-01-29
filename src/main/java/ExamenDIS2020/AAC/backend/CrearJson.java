@@ -14,13 +14,11 @@ import com.google.gson.reflect.TypeToken;
 
 public class CrearJson {
 
-    private static final String dir_json = new File("localizaIP.json").getAbsolutePath();
-    private static final String dir_json3= new File("fecha_ultima_Actualizacion.json").getAbsolutePath();
 
 
     public static void crearFicheroJson(ArrayList<Ip> ips){
         try{
-            FileWriter mywriter = new FileWriter(dir_json);
+            FileWriter mywriter = new FileWriter("localizaIP.json");
             mywriter.write(new Gson().toJson(ips));
             mywriter.close();
         }catch (Exception ex){
@@ -33,7 +31,7 @@ public class CrearJson {
         ArrayList<Ip> ips = new ArrayList<Ip>();
         Gson gson = new Gson();
         try {
-            ips = gson.fromJson(new FileReader(dir_json),new TypeToken<ArrayList<Ip>>(){}.getType());
+            ips = gson.fromJson(new FileReader("localizaIP.json"),new TypeToken<ArrayList<Ip>>(){}.getType());
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }

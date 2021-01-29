@@ -16,7 +16,7 @@ const path = require('path');
 //  - client code with index.html and index.[ts/js] for CCDM
 const frontendFolder = require('path').resolve(__dirname, 'frontend');
 const fileNameOfTheFlowGeneratedMainEntryPoint = require('path').resolve(__dirname, 'target/frontend/generated-flow-imports.js');
-const mavenOutputFolderForFlowBundledFiles = require('path').resolve(__dirname, '');
+const mavenOutputFolderForFlowBundledFiles = require('path').resolve(__dirname, 'target/classes/META-INF/VAADIN');
 const useClientSideIndexFileForBootstrapping = true;
 const clientSideIndexHTML = require('path').resolve(__dirname, 'target/index.html');
 const clientSideIndexEntryPoint = require('path').resolve(__dirname, 'target/index');

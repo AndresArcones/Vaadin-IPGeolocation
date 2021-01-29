@@ -6,6 +6,7 @@ import ExamenDIS2020.AAC.backend.Ip;
 import com.vaadin.flow.component.Text;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
+import com.vaadin.flow.component.textfield.IntegerField;
 import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.router.Route;
 
@@ -44,6 +45,11 @@ public class Formulario extends VerticalLayout{
 
 
     public Ip devolverGeo(String ipdoted){
+
+        if(Long.parseLong(ipdoted) > Long.parseLong("4294967295")){
+            resultado.setText("Ip demasiado grande");
+        }
+
         Long ipLong = FuncionesAnexoIP.Dot2LongIP(ipdoted);
 
         Ip ip = new Ip();
